@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>kh_project</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<display-name>MemberFrontController</display-name>
+		<servlet-name>MemberFrontController</servlet-name>
+		<servlet-class>net.member.action.MemberFrontController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>MemberFrontController</servlet-name>
+		<url-pattern>*.me</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>BoardqFrontController</servlet-name>
+		<servlet-class>net.boardq.action.BoardqFrontController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>BoardqFrontController</servlet-name>
+		<url-pattern>*.bo</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>BoardrFrontController</servlet-name>
+		<servlet-class>net.boardr.action.BoardrFrontController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>BoardrFrontController</servlet-name>
+		<url-pattern>*.re</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>BoardnFrontController</servlet-name>
+		<servlet-class>net.boardn.action.BoardnFrontController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>BoardnFrontController</servlet-name>
+		<url-pattern>*.no</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<display-name>ManagerFrontController</display-name>
+		<servlet-name>ManagerFrontController</servlet-name>
+		<servlet-class>net.manager.controller.ManagerFrontController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ManagerFrontController</servlet-name>
+		<url-pattern>*.ma</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<display-name>MboardFrontController</display-name>
+		<servlet-name>MboardFrontController</servlet-name>
+		<servlet-class>net.manager.controller.MboardFrontController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>MboardFrontController</servlet-name>
+		<url-pattern>*.mb</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<display-name>BookFrontController</display-name>
+		<servlet-name>BookFrontController</servlet-name>
+		<servlet-class>net.book.action.BookFrontController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>BookFrontController</servlet-name>
+		<url-pattern>*.boo</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
